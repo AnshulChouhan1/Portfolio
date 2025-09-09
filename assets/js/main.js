@@ -5,100 +5,134 @@ gsap.registerPlugin(ScrollTrigger, TextPlugin);
 let isLoading = true;
 let tl = gsap.timeline();
 
-// ===== LOADING SCREEN =====
-window.addEventListener('load', function() {
-    // Hide loading screen after 3 seconds
-    setTimeout(() => {
-        gsap.to('#loading-screen', {
-            opacity: 1,
-            duration: 0.5,
-            onComplete: () => {
-                document.getElementById('loading-screen').style.display = 'none';
-                isLoading = false;
-                initializeAnimations();
-            }
-        });
-    }, 2000);
-});
-
-// // ===== NAVIGATION =====
-// $(document).ready(function() {
-//     // Smooth scrolling for navigation links
-//     $('.navbar-nav a[href^="#"]').on('click', function(e) {
-//         e.preventDefault();
-//         const target = $(this.getAttribute('href'));
-//         if (target.length) {
-//             $('html, body').animate({
-//                 scrollTop: target.offset().top - 80
-//             }, 800);
-//         }
-//     });
-
-//     // Active navigation highlighting
-//     $(window).on('scroll', function() {
-//         const scrollPos = $(window).scrollTop() + 100;
-        
-//         $('.navbar-nav a[href^="#"]').each(function() {
-//             const target = $(this.getAttribute('href'));
-//             if (target.length && target.offset().top <= scrollPos && target.offset().top + target.outerHeight() > scrollPos) {
-//                 $('.navbar-nav a').removeClass('active');
-//                 $(this).addClass('active');
+// // ===== LOADING SCREEN =====
+// window.addEventListener('load', function() {
+//     // Hide loading screen after 3 seconds
+//     setTimeout(() => {
+//         gsap.to('#loading-screen', {
+//             opacity: 1,
+//             duration: 0.5,
+//             onComplete: () => {
+//                 document.getElementById('loading-screen').style.display = 'none';
+//                 isLoading = false;
+//                 initializeAnimations();
 //             }
 //         });
-
-//         // Glass navigation effect
-//         if (scrollPos > 50) {
-//             $('.glass-nav').addClass('scrolled');
-//         } else {
-//             $('.glass-nav').removeClass('scrolled');
-//         }
-
-//         // Back to top button
-//         if (scrollPos > 300) {
-//             $('.back-to-top').addClass('show');
-//         } else {
-//             $('.back-to-top').removeClass('show');
-//         }
-//     });
-
-//     // Back to top functionality
-//     $('.back-to-top').on('click', function() {
-//         $('html, body').animate({
-//             scrollTop: 0
-//         }, 800);
-//     });
-
-//     // Scroll indicator click
-//     $('.scroll-indicator').on('click', function() {
-//         $('html, body').animate({
-//             scrollTop: $('#about').offset().top - 80
-//         }, 800);
-//     });
+//     }, 2000);
 // });
 
-// // ===== GSAP ANIMATIONS =====
-// function initializeAnimations() {
-//     // Hero section animations
-//     initHeroAnimations();
+// ===== LOADING SCREEN =====
+window.addEventListener("load", function () {
+    const loadingScreen = document.getElementById("loading-screen");
+
+    // Detect if page load is from refresh/navigation
+    if (performance.navigation.type === performance.navigation.TYPE_RELOAD) {
+        // Always show loader on refresh
+        showLoader();
+    } else if (!sessionStorage.getItem("hasLoaded")) {
+        // First visit
+        showLoader();
+        sessionStorage.setItem("hasLoaded", "true");
+    } else {
+        // Skip loader
+        loadingScreen.style.display = "none";
+        initializeAnimations();
+    }
+
+    function showLoader() {
+        setTimeout(() => {
+            gsap.to("#loading-screen", {
+                opacity: 0,
+                duration: 0.5,
+                onComplete: () => {
+                    loadingScreen.style.display = "none";
+                    isLoading = false;
+                    initializeAnimations();
+                },
+            });
+        }, 1000);
+    }
+});
+
+
+// ===== NAVIGATION =====
+$(document).ready(function() {
+    // Smooth scrolling for navigation links
+    $('.navbar-nav a[href^="#"]').on('click', function(e) {
+        e.preventDefault();
+        const target = $(this.getAttribute('href'));
+        if (target.length) {
+            $('html, body').animate({
+                scrollTop: target.offset().top - 80
+            }, 800);
+        }
+    });
+
+    // Active navigation highlighting
+    $(window).on('scroll', function() {
+        const scrollPos = $(window).scrollTop() + 100;
+        
+        $('.navbar-nav a[href^="#"]').each(function() {
+            const target = $(this.getAttribute('href'));
+            if (target.length && target.offset().top <= scrollPos && target.offset().top + target.outerHeight() > scrollPos) {
+                $('.navbar-nav a').removeClass('active');
+                $(this).addClass('active');
+            }
+        });
+
+        // Glass navigation effect
+        if (scrollPos > 50) {
+            $('.glass-nav').addClass('scrolled');
+        } else {
+            $('.glass-nav').removeClass('scrolled');
+        }
+
+        // Back to top button
+        if (scrollPos > 300) {
+            $('.back-to-top').addClass('show');
+        } else {
+            $('.back-to-top').removeClass('show');
+        }
+    });
+
+    // Back to top functionality
+    $('.back-to-top').on('click', function() {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 800);
+    });
+
+    // Scroll indicator click
+    $('.scroll-indicator').on('click', function() {
+        $('html, body').animate({
+            scrollTop: $('#about').offset().top - 80
+        }, 800);
+    });
+});
+
+// ===== GSAP ANIMATIONS =====
+function initializeAnimations() {
+    // Hero section animations
+    initHeroAnimations();
     
-//     // Scroll-triggered animations
-//     initScrollAnimations();
+    // Scroll-triggered animations
+    initScrollAnimations();
     
-//     // Skill progress animations
-//     initSkillAnimations();
+    // Skill progress animations
+    initSkillAnimations();
     
-//     // Project hover animations
-//     initProjectAnimations();
+    // Project hover animations
+    initProjectAnimations();
     
-//     // Timeline animations
-//     initTimelineAnimations();
+    // Timeline animations
+    initTimelineAnimations();
     
-//     // Contact form animations
-//     initContactAnimations();
+    // Contact form animations
+    initContactAnimations();
     
-//     // Particle effects
-//     initParticleEffects();
-// }
+    // Particle effects
+    initParticleEffects();
+}
 
 // // ===== HERO ANIMATIONS =====
 // function initHeroAnimations() {
