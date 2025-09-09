@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anshul Chouhan - Python Developer Portfolio</title>
+
+    <!-- Fav Icon -->
+    <link rel="icon" href="assets/icons/fav-icon.png" type="image/png">
+
+    <!-- Bootstrap 4.6 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader">
+            <div class="neon-text">ANSHUL</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top glass-nav" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand neon-text" href="#home">
+                <span class="brand-icon">&lt;/&gt;</span>
+                Anshul
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a> -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-background">
+            <div class="particles-container"></div>
+            <div class="geometric-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+        
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-8">
+                    <div class="hero-content">
+                        <h1 class="hero-title">
+                            <span class="greeting">Hello, I'm</span>
+                            <span class="name neon-text" id="typewriter-name">Anshul Chouhan</span>
+                        </h1>
+                        <h2 class="hero-subtitle" id="typewriter-role">Python Developer & Full-Stack Engineer</h2>
+                        <p class="hero-description">
+                            Passionate about creating innovative solutions with Python, Flask, and modern web technologies. 
+                            Transforming ideas into powerful applications.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#projects" class="btn neon-btn neon-btn-primary">
+                                <i class="fas fa-code"></i> View My Work
+                            </a>
+                            <a href="#contact" class="btn neon-btn neon-btn-outline">
+                                <i class="fas fa-envelope"></i> Get In Touch
+                            </a>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://github.com/AnshulChouhan1" target="_blank" class="social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/anshul-chouhan-606413264/" target="_blank" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="mailto:anshulchouhan0303@gmail.com" class="social-link">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="hero-image">
+                        <div class="profile-container">
+                            <div class="profile-glow"></div>
+                            <div class="profile-placeholder">
+                                <i class="fas fa-user-astronaut"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-header text-center">
+                        <h2 class="section-title neon-text">About Me</h2>
+                        <div class="section-divider"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <h3 class="about-subtitle">Passionate Python Developer</h3>
+                        <p class="about-text">
+                            A motivated and dedicated Python developer with hands-on experience in Python, Flask, and SQL. 
+                            I'm eager to contribute my skills in Python, REST API development, and full-stack development 
+                            to dynamic development teams.
+                        </p>
+                        <p class="about-text">
+                            Currently pursuing BTech in Computer Science with Data Science specialization, I combine 
+                            academic knowledge with practical experience gained through internships and personal projects.
+                        </p>
+                        
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <div class="stat-number neon-text">3+</div>
+                                <div class="stat-label">Projects Completed</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number neon-text">1+</div>
+                                <div class="stat-label">Years Experience</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number neon-text">3+</div>
+                                <div class="stat-label">Certifications</div>
+                            </div>
+                        </div>
+                        
+                        <div class="about-buttons">
+                            <a href="#contact" class="btn neon-btn neon-btn-primary">
+                                <i class="fas fa-download"></i> Download CV
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="about-image">
+                        <div class="image-container">
+                            <div class="image-glow"></div>
+                            <div class="code-snippet">
+                                <div class="code-header">
+                                    <span class="code-dot red"></span>
+                                    <span class="code-dot yellow"></span>
+                                    <span class="code-dot green"></span>
+                                </div>
+                                <div class="code-content">
+                                    <div class="code-line">
+                                        <span class="keyword">class</span> 
+                                        <span class="class-name">Developer</span>:
+                                    </div>
+                                    <div class="code-line">
+                                        &nbsp;&nbsp;<span class="keyword">def</span> 
+                                        <span class="function">__init__</span>(self):
+                                    </div>
+                                    <div class="code-line">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;self.name = <span class="string">"Anshul"</span>
+                                    </div>
+                                    <div class="code-line">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;self.skills = [<span class="string">"Python"</span>, <span class="string">"Flask"</span>]
+                                    </div>
+                                    <div class="code-line">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;self.passion = <span class="string">"Coding"</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding bg-dark-alt">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-header text-center">
+                        <h2 class="section-title neon-text">Skills & Technologies</h2>
+                        <div class="section-divider"></div>
+                        <p class="section-description">Technologies I work with to bring ideas to life</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3 class="skills-category-title">Technical Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item" data-skill="Python">
+                            <div class="skill-icon">
+                                <img src="assets/icons/python.png" alt="Python">
+                            </div>
+                            <div class="skill-info">
+                                <h4 class="skill-name">Python</h4>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-progress="90"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="Web">
+                            <div class="skill-icon">
+                                <img src="assets/icons/html-css-js.jpg" alt="Web Technologies">
+                            </div>
+                            <div class="skill-info">
+                                <h4 class="skill-name">HTML, CSS, JavaScript</h4>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-progress="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="Database">
+                            <div class="skill-icon">
+                                <img src="assets/icons/mysql.png" alt="Database">
+                            </div>
+                            <div class="skill-info">
+                                <h4 class="skill-name">MySQL, SQLite</h4>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-progress="80"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="Flask">
+                            <div class="skill-icon">
+                                <img src="assets/icons/flask.png" alt="Flask">
+                            </div>
+                            <div class="skill-info">
+                                <h4 class="skill-name">Flask/FastAPI</h4>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-progress="75"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="Version Control">
+                            <div class="skill-icon">
+                                <img src="assets/icons/github.png" alt="Git">
+                            </div>
+                            <div class="skill-info">
+                                <h4 class="skill-name">Git & GitHub</h4>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-progress="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <h3 class="skills-category-title">Soft Skills</h3>
+                    <div class="soft-skills">
+                        <div class="soft-skill-item">
+                            <div class="soft-skill-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <div class="soft-skill-content">
+                                <h4>Problem-Solving</h4>
+                                <p>Analytical thinking and creative solutions to complex challenges</p>
+                            </div>
+                        </div>
+                        
+                        <div class="soft-skill-item">
+                            <div class="soft-skill-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="soft-skill-content">
+                                <h4>Teamwork & Communication</h4>
+                                <p>Collaborative approach with excellent communication skills</p>
+                            </div>
+                        </div>
+                        
+                        <div class="soft-skill-item">
+                            <div class="soft-skill-icon">
+                                <i class="fas fa-sync-alt"></i>
+                            </div>
+                            <div class="soft-skill-content">
+                                <h4>Adaptability</h4>
+                                <p>Quick learner who adapts to new technologies and environments</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="certifications">
+                        <h3 class="skills-category-title">Certifications</h3>
+                        <div class="cert-list">
+                            <a href="https://www.hackerrank.com/certificates/495108aa8b04" target="_blank" style="text-decoration: none; color: inherit;">
+                            <div class="cert-item">
+                                <i class="fas fa-certificate"></i>
+                                <span>Python by HackerRank</span>
+                            </div>
+                            </a>
+                            <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/T6kdcdKSTfg2aotxT/hzmoNKtzvAzXsEqx8_T6kdcdKSTfg2aotxT_8TqiABMnESFjrHHkW_1730988463096_completion_certificate.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+                            <div class="cert-item">
+                                <i class="fas fa-certificate"></i>
+                                <span>Backend Development Course by Physics Wallah</span>
+                            </div>
+                            </a>
+                            <a href="https://pwskills.com/learn/certificate/50137019-7727-4ad7-817a-f422f78f7465/" target="_blank" style="text-decoration: none; color: inherit;">
+                            <div class="cert-item">
+                                <i class="fas fa-certificate"></i>
+                                <span>Data analyst and visualization by Accenture</span>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-header text-center">
+                        <h2 class="section-title neon-text">Featured Projects</h2>
+                        <div class="section-divider"></div>
+                        <p class="section-description">Showcasing my latest work and achievements</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/img1.png" alt="Food Delivery Web App">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://food-delivery-web-application-q3pg.onrender.com" target="_blank" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="https://github.com/AnshulChouhan1/Food-Delivery-Web-Application" class="project-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- <div class="project-placeholder">
+                                <i class="fas fa-utensils"></i>
+                            </div> -->
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Food Delivery Web App</h3>
+                            <p class="project-description">
+                                Full-stack food delivery application built with Flask, SQLAlchemy, and SQLite. 
+                                Features user authentication, cart management, and order tracking.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Flask</span>
+                                <span class="tech-tag">SQLAlchemy</span>
+                                <span class="tech-tag">Bootstrap</span>
+                                <span class="tech-tag">Chart.js</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/img2.jpeg" alt="Food Delivery Web App">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://www.linkedin.com/posts/anshul-chouhan-606413264_library-management-system-python-sql-activity-7321880778672361473-ro6p?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEDYWKYBdy-e0xXJ6wYFVCnENqIMJo7fq1I" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="https://github.com/AnshulChouhan1/Library-Management-System" class="project-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- <div class="project-placeholder">
+                                <i class="fas fa-book"></i>
+                            </div> -->
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Library Management System</h3>
+                            <p class="project-description">
+                                CLI-based library management system using Python and SQLite. 
+                                Manages books, members, and transactions with enhanced UI.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">SQLite</span>
+                                <span class="tech-tag">SQLAlchemy</span>
+                                <span class="tech-tag">Pyfiglet</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/img3.jpeg" alt="Food Delivery Web App">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://www.linkedin.com/posts/anshul-chouhan-606413264_python-sql-matplotlib-activity-7352335137650454528-fIkz?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEDYWKYBdy-e0xXJ6wYFVCnENqIMJo7fq1I" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="https://github.com/AnshulChouhan1/Expense-Tracker" class="project-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- <div class="project-placeholder">
+                                <i class="fas fa-chart-line"></i>
+                            </div> -->
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Expense Tracker</h3>
+                            <p class="project-description">
+                                CLI-based expense tracker with data visualization. 
+                                Track income/expenses with filtering and reporting features.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">SQLite</span>
+                                <span class="tech-tag">Matplotlib</span>
+                                <span class="tech-tag">SQLAlchemy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section-padding bg-dark-alt">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-header text-center">
+                        <h2 class="section-title neon-text">Work Experience</h2>
+                        <div class="section-divider"></div>
+                        <p class="section-description">My professional journey and achievements</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-12">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">Feb 2025 - May 2025</div>
+                                <h3 class="timeline-title">Product Support Engineer</h3>
+                                <h4 class="timeline-company">Flazetech IT Solution</h4>
+                                <ul class="timeline-description">
+                                    <li>Supported clients by diagnosing and fixing product-related challenges.</li>
+                                    <li>Delivered user assistance and reported technical issues to the development team.</li>
+                                    <li>Performed testing activities and suggested enhancements for better performance.</li>
+                                    <li>Documented customer queries and resolutions to improve service quality.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">Jul 2024 - Oct 2024</div>
+                                <h3 class="timeline-title">Python Developer Intern</h3>
+                                <h4 class="timeline-company">Mahamaya Agro</h4>
+                                <ul class="timeline-description">
+                                    <li>Assisted in developing and maintaining responsive websites for Mahamaya Agro.</li>
+                                    <li>Worked on both front-end and back-end tasks to improve functionality.</li>
+                                    <li>Supported the team in creating digital tools for agriculture solutions.</li>
+                                    <li>Helped optimize website performance and user experience.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <!-- <section id="testimonials" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-header text-center">
+                        <h2 class="section-title neon-text">Testimonials</h2>
+                        <div class="section-divider"></div>
+                        <p class="section-description">What colleagues and clients say about my work</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-12">
+                    <div class="testimonials-slider">
+                        <div class="testimonial-item">
+                            <div class="testimonial-content">
+                                <div class="quote-icon">
+                                    <i class="fas fa-quote-left"></i>
+                                </div>
+                                <p class="testimonial-text">
+                                    "Anshul demonstrated exceptional problem-solving skills and attention to detail 
+                                    during his internship. His ability to quickly grasp new concepts and implement 
+                                    solutions made him a valuable team member."
+                                </p>
+                                <div class="testimonial-author">
+                                    <div class="author-avatar">
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                    <div class="author-info">
+                                        <h4 class="author-name">Tech Lead</h4>
+                                        <p class="author-position">Flazetech IT Solution</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-item">
+                            <div class="testimonial-content">
+                                <div class="quote-icon">
+                                    <i class="fas fa-quote-left"></i>
+                                </div>
+                                <p class="testimonial-text">
+                                    "Working with Anshul was a great experience. His dedication to learning and 
+                                    improving his skills is commendable. He consistently delivered quality work 
+                                    and was always eager to take on new challenges."
+                                </p>
+                                <div class="testimonial-author">
+                                    <div class="author-avatar">
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                    <div class="author-info">
+                                        <h4 class="author-name">Project Manager</h4>
+                                        <p class="author-position">Mahamaya Agro</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-dark-alt">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-header text-center">
+                        <h2 class="section-title neon-text">Get In Touch</h2>
+                        <div class="section-divider"></div>
+                        <p class="section-description">Let's discuss your next project or opportunity</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <!-- <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control neon-input" id="name" placeholder="Your Name" >
+                                        <label for="name" class="floating-label">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control neon-input" id="email" placeholder="Your Email" required>
+                                        <label for="email" class="floating-label">Your Email</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control neon-input" id="subject" placeholder="Subject" required>
+                                <label for="subject" class="floating-label">Subject</label>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control neon-input" id="message" rows="6" placeholder="Your Message" required></textarea>
+                                <label for="message" class="floating-label">Your Message</label>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn neon-btn neon-btn-primary">
+                                    <i class="fas fa-paper-plane"></i>
+                                    <span class="btn-text">Send Message</span>
+                                    <span class="btn-loading">Sending...</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div> -->
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-lg-4">
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>anshulchouhan0303@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+91 9303031338</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Bhopal, Madhya Pradesh</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-content text-center">
+                        <div class="footer-social">
+                            <a href="https://github.com/AnshulChouhan1" target="_blank" class="social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/anshul-chouhan-606413264/" target="_blank" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://x.com/chohan_ans51374?t=17ygjZwRroobSO38RanjPg&s=09" class="social-link" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                        <p class="footer-text">
+                            Developed by <b>Anshul Chouhan</b>
+                        </p>
+                        <p class="footer-subtext">
+                            <!-- Crafted with <i class="fas fa-heart neon-text"></i> and lots of code -->
+                            &copy; 2025 Anshul Chouhan. All rights reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Back to Top Button -->
+        <div class="back-to-top" id="backToTop">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- Bootstrap 4.6 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
