@@ -1,4 +1,4 @@
-# Anshul Chouhan - Neon Portfolio Website
+# Anshul Chouhan - Portfolio Website
 
 A stunning, futuristic portfolio website featuring neon-themed design, smooth GSAP animations, and responsive layout. Built with HTML5, CSS3, Bootstrap 4.6, and GSAP.
 
@@ -59,26 +59,6 @@ portfolio-website/
 └── test_results.md         # Testing documentation
 ```
 
-## 🎨 Color Palette
-
-```css
-/* Neon Colors */
---neon-cyan: #00ffff
---neon-magenta: #ff00ff
---neon-lime: #00ff00
---neon-amber: #ffbf00
-
-/* Background Colors */
---bg-primary: #0a0a0a
---bg-secondary: #111111
---bg-tertiary: #1a1a1a
-
-/* Text Colors */
---text-primary: #ffffff
---text-secondary: #cccccc
---text-muted: #888888
-```
-
 ## 🛠️ Setup and Installation
 
 1. **Clone or Download** the project files
@@ -95,68 +75,6 @@ npx live-server
 # Using PHP
 php -S localhost:8000
 ```
-
-## 📱 Browser Compatibility
-
-- **Chrome**: 90+ ✅
-- **Firefox**: 88+ ✅
-- **Safari**: 14+ ✅
-- **Edge**: 90+ ✅
-
-## 🎯 Performance Features
-
-- **Optimized Animations**: Hardware-accelerated transforms
-- **Lazy Loading**: Images load as needed
-- **Throttled Scroll**: Optimized scroll event handling
-- **Reduced Motion**: Respects user accessibility preferences
-
-## 🔧 Customization
-
-### Changing Colors
-Edit the CSS variables in `assets/css/style.css`:
-
-```css
-:root {
-    --neon-cyan: #your-color;
-    --neon-magenta: #your-color;
-    /* ... other variables */
-}
-```
-
-### Adding Content
-Update the content in `index.html` and corresponding data in the JavaScript file.
-
-### Modifying Animations
-Adjust GSAP animations in `assets/js/main.js`:
-
-```javascript
-gsap.from('.your-element', {
-    opacity: 0,
-    y: 50,
-    duration: 1,
-    ease: "power2.out"
-});
-```
-
-## 📊 Performance Metrics
-
-- **Lighthouse Score**: 95+ (Performance, Accessibility, Best Practices)
-- **Loading Time**: < 2 seconds on average connection
-- **Animation Performance**: Consistent 60fps
-- **Mobile Friendly**: 100% responsive design
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
 ## 👨‍💻 About the Developer
 
 **Anshul Chouhan**
