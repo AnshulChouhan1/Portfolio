@@ -88,7 +88,7 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 9999;
-    transition: opacity 0.5s ease;
+    transition: opacity 1s ease;
 }
 
 .loader {
@@ -99,7 +99,7 @@ body {
     font-size: 3rem;
     font-weight: 900;
     margin-bottom: 2rem;
-    animation: pulse-glow 2s infinite;
+    animation: pulse-glow 3s infinite;
 }
 
 .loading-bar {
@@ -115,7 +115,7 @@ body {
     height: 100%;
     background: var(--neon-cyan);
     border-radius: 2px;
-    animation: loading-animation 3s ease-in-out;
+    animation: loading-animation 2s ease-in-out;
 }
 
 @keyframes loading-animation {

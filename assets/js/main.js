@@ -10,15 +10,15 @@ window.addEventListener('load', function() {
     // Hide loading screen after 3 seconds
     setTimeout(() => {
         gsap.to('#loading-screen', {
-            opacity: 10,
-            duration: 0.3,
+            opacity: 1,
+            duration: 0.5,
             onComplete: () => {
                 document.getElementById('loading-screen').style.display = 'none';
                 isLoading = false;
                 initializeAnimations();
             }
         });
-    }, 3000);
+    }, 2000);
 });
 
 // // ===== NAVIGATION =====
